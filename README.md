@@ -1,7 +1,5 @@
 # NewYorkTaxiAnalysis
 
-#workbook
-
 ## Problem Definition
 Predicting the average money that a taxi driver in a given region of NY-city makes per day and hour.
 
@@ -17,12 +15,12 @@ Upon exploring the dataset column by column, it was seen that there are some out
 
 2- Too high ‘total_amount ‘ values. The upper limit was decided to be 200 dollars. For this decision I looked at the number of datapoint that needs to be removed for the cases of 100 (10832 points), 200 (1166 points), and 300 dollars (307 points).  We chose 200 dollars since it is not a big loss of points considering the size of the dataset (7667792 data points).
 
-! [Negative and zero values](/figures/figure2.png)
+![Negative and zero values](/figures/figure2.png)
 
 
 For a closer look on the negative and too high values, below only the data points where ‘total_amount’ is smaller than 1000 dollars is plotted.
 
-! [Too high values](/figures/figure1.png)
+![Too high values](/figures/figure1.png)
 
 taxi_data_cleaned = taxi_data[(taxi_data[‘total_amount’]<200) & (taxi_data[‘total_amount’]>0)]
 
@@ -60,7 +58,7 @@ The model fitted using Random Forest algorithm was decided to be worked on for t
 
 Below is the true vs. predicted value plot for the tuned random forest model. The true values are resented by the x-axis and the predicted ones by the y-axis.
 
-! [True vs. predicted value plot for the tuned random forest model.](/figures/figure3.png)
+![True vs. predicted value plot for the tuned random forest model.](/figures/figure3.png)
 
 
 ## Outlook and Suggestions
