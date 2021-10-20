@@ -67,7 +67,8 @@ Once the hyper-parameters were tuned, the performance of the Random Forest impro
 
 The dataset had information about the LocationID and the Boroughs as we added later to the original dataset.  Below you can see the results of pd.value_counts() for the column of ‘Borough’ in the dataset, which shows how many times each unique location appears in the dataset. 
 
-|-----------------------------|-------|---|---|---|
+
+|-----------------------------|:------|:--|:--|:--|
 | Manhattan                   | 45309 |   |   |   |
 | Brooklyn                    | 23632 |   |   |   |
 | Queens                      | 21971 |   |   |   |
@@ -76,6 +77,7 @@ The dataset had information about the LocationID and the Boroughs as we added la
 | Staten Island               | 302   |   |   |   |
 | EWR                         | 270   |   |   |   |
 | Name: Borough, dtype: int64 |       |   |   |   |
+
 
 In the analysis, we did not limit the regions while training the model. There are some locations which do not have as much transactions as others do. If we were to avoid these locations, of course depending on the problem and the purpose, the performance could be improved. If the purpose is to sample all of NYC then we should definitely keep those data points.  But if the goal is simply increasing the performance of the model, then including only the borough with the highest amount of transactions will a good idea since the boroughs with fewer data points are more likely to bring mistakes into the model. However, such a decision should be made carefully.
 
