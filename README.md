@@ -67,9 +67,9 @@ Once the hyper-parameters were tuned, the performance of the Random Forest impro
 
 The dataset had information about the LocationID and the Boroughs as we added later to the original dataset.  Below you can see the results of pd.value_counts() for the column of ‘Borough’ in the dataset, which shows how many times each unique location appears in the dataset. 
 
-Manhattan                   45309 
-Brooklyn                    23632 
-Queens                      21971 
+Manhattan                   45309   
+Brooklyn                    23632   
+Queens                      21971  
 Bronx                       9584  
 Unknown                     1453  
 Staten Island               302  
