@@ -40,7 +40,7 @@ Decision Trees, Random Forest and Gradient Boosting were implemented and compare
 The performance results of the 3 algorithms are:
 
 |                     | MAE      | RMSE      | R2       |
-|——————————|—————|—————|—————|
+|---------------------|----------|-----------|----------|
 | Benchmark           | 9.757872 | 14.703044 | 0.215522 |
 | Decision Tree       | 8.468280 | 13.868055 | 0.302093 |
 | Random Forest       | 7.345874 | 13.014364 | 0.385372 |
@@ -49,7 +49,7 @@ The performance results of the 3 algorithms are:
 The model fitted using Random Forest algorithm was decided to be worked on for the tuning. Correct hyper-parameters are tuned to improve the model performance. The best parameter values for the Random Forest Algorithms  were found to be:  ’n_estimators’: 400, ‘min_samples_split’: 20, ‘min_samples_leaf’: 4, ‘max_features’: ‘auto’, ‘max_depth’: 300, ’bootstrap’: True. After tuning the hyper-parameters, evaluation metrics of the Random Forest model became:
 
 |                     | MAE      | RMSE      | R2       |
-|——————————|—————|—————|—————|
+|---------------------|----------|-----------|----------|
 | Benchmark           | 9.757872 | 14.703044 | 0.215522 |
 | Decision Tree       | 8.468280 | 13.868055 | 0.302093 |
 | Random Forest       | 7.345874 | 13.014364 | 0.385372 |
@@ -68,7 +68,7 @@ Once the hyper-parameters were tuned, the performance of the Random Forest impro
 The dataset had information about the LocationID and the Boroughs as we added later to the original dataset.  Below you can see the results of pd.value_counts() for the column of ‘Borough’ in the dataset, which shows how many times each unique location appears in the dataset. 
 
 
-|-----------------------------|:------|:--|:--|:--|
+|-----------------------------|-------|---|---|---|
 | Manhattan                   | 45309 |   |   |   |
 | Brooklyn                    | 23632 |   |   |   |
 | Queens                      | 21971 |   |   |   |
