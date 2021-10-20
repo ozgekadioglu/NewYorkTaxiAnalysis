@@ -66,8 +66,7 @@ Below is the true vs. predicted value plot for the tuned random forest model. Th
 Once the hyper-parameters were tuned, the performance of the Random Forest improved. Therefore, there still might be possibility to improve the performance.  Here are some suggestions that were not tried in the code:
 
 The dataset had information about the LocationID and the Boroughs as we added later to the original dataset.  Below you can see the results of pd.value_counts() for the column of ‘Borough’ in the dataset, which shows how many times each unique location appears in the dataset. 
-
-
+|                             |       |   |   |   |
 |-----------------------------|-------|---|---|---|
 | Manhattan                   | 45309 |   |   |   |
 | Brooklyn                    | 23632 |   |   |   |
