@@ -83,3 +83,6 @@ Using random_grid(), the new hyper-parameters that lead better performance were 
 
 There are 1270 data points with total_amount=0 and trip_distance=0 which were removed during the data_cleaning since it makes sense that no trip distance means no payment. However, there are 51696 data points with trip_distance=0 while the total_amount>0. 51696 sounds like an important amount of data points to remove so I preferred not removing them. However, in real life, I would demand an explanation about the trips for which a payment happened even though the trip_distance is 0. The explanation could be the way trip_distance is calculated or a technical problem that occurred in the calculation system during the trip. Either way, for these data points, I would ask for an explanation to the data owner.
 
+
+Credits to Misra Turp for [Hands-on Data Science: 
+Complete Your First Portfolio Project](https://www.soyouwanttobeadatascientist.com/hods)
